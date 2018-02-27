@@ -74,7 +74,7 @@ module.exports = {
     //解析HTML
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'template.html',
+            template: './src/index.html',
             filename: 'index.html',
             title: '测试'
         })
