@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'//这个是基于vue的插件
+import VueRouter from 'vue-router'//这个是基于vue的路由插件
 
 //是插件就得有use来启动
 Vue.use(VueRouter)
