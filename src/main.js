@@ -27,6 +27,10 @@ Vue.prototype.$http = axios;
 Vue.prototype.$api = api;
 // 实例全局的Vue对象
 console.log(Vue.prototype);
+
+//设置HTML和body的高
+import './less/index.less';
+
 new Vue({
     el: "#app",
     render: createElement => createElement(App),
