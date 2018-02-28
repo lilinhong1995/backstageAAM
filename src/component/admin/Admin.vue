@@ -1,9 +1,23 @@
 <template>
-  <div>
-    <!-- 调用组件：组件的调用就跟HTML标签一样 -->
-    <app-header></app-header>
-    <app-aside></app-aside>
-    <router-view></router-view>
+  <div class="admin">
+    <el-container>
+      <el-aside width="200px">
+        <!-- 调用组件：组件的调用就跟HTML标签一样 -->
+        <!-- 公共左侧 -->
+        <app-Aside></app-Aside>
+      </el-aside>
+      <el-container>
+        <el-header>
+          <!-- 公共头部 -->
+          <app-Header></app-Header>
+        </el-header>
+        <!-- 变换主体 -->
+        <el-main>
+          <router-view></router-view>
+        </el-main>
+      </el-container>
+    </el-container>
+    
   </div>
 </template>
 
@@ -14,9 +28,35 @@ import Aside from "./subcom/Aside.vue";
 export default {
   // 创建组件
   components: {
-    appHeader:Header ,
-    appAside:Aside
+    appHeader: Header,
+    appAside: Aside
   }
-}
+};
 // 注册全局的用 Vue.component('')
 </script>
+
+<style>
+.admin {
+  height: 100%;
+}
+.el-header{
+  line-height: 60px;
+}
+.el-container {
+  height: 100%;
+}
+.el-aside {
+  height: 100%;
+  background-color: #d3dce6;
+  color: #333;
+  text-align: center;
+  line-height: 200px;
+}
+
+.el-main {
+  height: 100%;
+  color: #333;
+  background-color: #ccc;
+}
+
+</style>

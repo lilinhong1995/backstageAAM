@@ -56,7 +56,14 @@ export default {
       //post的第二个参数是发送的数据，这里直接把表单对象传过去
       this.$http.post(this.$api.login, this.ruleForm2).then((res) => {
         if(res.data.status == 0) {
-          this.$alert(res.data.message)
+          this.$alert(res.data.message,"成功提示",{
+            callback: () => {
+              //cookit保存
+              localStorage.setItem("uname",res.data.message.uname)
+              //路由有个push方法可以跳转页面
+              this.$router.push({name:"admin"})
+            }
+          })
         }else {
           this.$alert(res.data.message)
         }
