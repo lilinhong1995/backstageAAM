@@ -35,19 +35,20 @@ export default {
 // 注册全局的用 Vue.component('')
 </script>
 
-<style>
+<style scoped lang = 'less'>
 .admin {
   height: 100%;
 }
 .el-header{
   line-height: 60px;
+  background-color: #001731;
 }
 .el-container {
   height: 100%;
 }
 .el-aside {
   height: 100%;
-  background-color: #d3dce6;
+  background-color: #001731;
   color: #333;
   text-align: center;
   line-height: 200px;
@@ -56,7 +57,7 @@ export default {
 .el-main {
   height: 100%;
   color: #333;
-  background-color: #ccc;
+  background-color: rgb(8, 109, 186);
 }
 
 </style>

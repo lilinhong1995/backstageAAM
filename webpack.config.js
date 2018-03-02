@@ -71,7 +71,7 @@ module.exports = {
             }
         ]
     },
-    //解析HTML
+    //解析HTML，并且引用bundle.js
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
