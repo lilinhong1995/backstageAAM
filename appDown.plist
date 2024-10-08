@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>items</key>
+	<array>
+		<dict>
+			<key>assets</key>
+			<array>
+				<dict>
+					<key>kind</key>
+					<string>software-package</string>
+					<key>url</key>
+					<string>https://cq.wens.com.cn/fileserver//wens-prod/1554963617547709203/202407/2001452004353770496/8784b28464bc4ec2827234b793a6fa71/__UNI__E6BD901_0724111101.ipa</string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>display-image</string>
+					<key>url</key>
+					<!-- <string>http://wp.wens.com.cn/static/slibs/download/ios/ygb/icon.png</string> -->
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>full-size-image</string>
+					<key>url</key>
+					<!-- <string>http://wp.wens.com.cn/static/slibs/download/ios/ygb/icon-512.png</string> -->
+				</dict>
+			</array>
+			<key>metadata</key>
+			<dict>
+				<key>bundle-identifier</key>
+				<string>cn.com.wens.dr.test.dis</string>
+				<key>bundle-version</key>
+				<string>1.0.4.5</string>
+				<key>kind</key>
+				<string>software</string>
+				<key>title</key>
+				<string>应用安装</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
