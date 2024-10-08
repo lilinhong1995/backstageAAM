@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>温氏移动应用下载</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <script type="text/javascript">
+    function getRandomNumber() {
+        return Math.random()
+    }
+    window.onload = function() {
+        var baseLink = 'itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/lilinhong1995/backstageAAM/refs/heads/master/';
+        var yilink = baseLink + 'appDown.plist?' + getRandomNumber();
+        document.getElementById('aTag').setAttribute("href", yilink);
+
+        var browser = {
+            versions: function() {
+                var u = navigator.userAgent,
+                    app = navigator.appVersion;
+                return;
+            }(),
+            language: (navigator.browserLanguage || navigator.language).toLowerCase()
+        }
+        document.getElementById('tip').innerHTML = "语言版本: " + browser.language + ",," + navigator.userAgent + ",," + navigator.appVersion;
+        document.getElementById('tip').innerText = "语言版本: " + browser.language + ",," + navigator.userAgent + ",," + navigator.appVersion;
+        var userAgent = navigator.userAgent;
+        // if (userAgent.indexOf('iPhone') >= 0 || userAgent.indexOf('iPad') >= 0 || userAgent.indexOf('iPod') >= 0) {
+            // document.getElementById('tip').innerText = "当前终端是iOS平台";
+            // document.getElementById('tip').innerHTML = "当前终端是iOS平台";
+            // document.getElementById('dd').setAttribute("hidden", 'false');
+            document.getElementById('tip').setAttribute("hidden", "true");
+        // } else {
+        //     document.writeln("如果没有提示下载，请选择在浏览器打开");
+        //     window.location = "{{static_url('slibs/download/')}}" + "ykt/wensygb/wensygb.apk";
+        // }
+
+    };
+    </script>
+</head>
+
+<body>
+    <div id='tip'>
+
+    </div>
+    <div id="dd">
+        <p>温馨提示：</p>
+        <p>如果点击安装无反应，请确保当前是在苹果自带浏览器Safari下操作！</p>
+        <hr>
+        <p></p>
+        <a id="aTag" href="">点击安装易管宝客户端</a>
+    </div>
+
+</body>
+
+</html>
